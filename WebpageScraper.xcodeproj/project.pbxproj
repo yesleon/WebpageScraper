@@ -12,6 +12,10 @@
 		7129357722953C4700FD518F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7129357522953C4700FD518F /* Main.storyboard */; };
 		7129357922953C4900FD518F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7129357822953C4900FD518F /* Assets.xcassets */; };
 		7129357C22953C4900FD518F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7129357A22953C4900FD518F /* LaunchScreen.storyboard */; };
+		7129358522953D6500FD518F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7129358422953D6500FD518F /* WebKit.framework */; };
+		712935872295400E00FD518F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712935862295400E00FD518F /* Article.swift */; };
+		71293589229541AF00FD518F /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71293588229541AF00FD518F /* String+Error.swift */; };
+		7129358B2295433300FD518F /* WebpageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129358A2295433300FD518F /* WebpageParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7129357822953C4900FD518F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7129357B22953C4900FD518F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7129357D22953C4900FD518F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7129358422953D6500FD518F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		712935862295400E00FD518F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		71293588229541AF00FD518F /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		7129358A2295433300FD518F /* WebpageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebpageParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7129358522953D6500FD518F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				7129357022953C4700FD518F /* WebpageScraper */,
 				7129356F22953C4700FD518F /* Products */,
+				7129358322953D6500FD518F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +66,23 @@
 			children = (
 				7129357122953C4700FD518F /* AppDelegate.swift */,
 				7129357322953C4700FD518F /* ViewController.swift */,
+				7129358A2295433300FD518F /* WebpageParser.swift */,
+				712935862295400E00FD518F /* Article.swift */,
+				71293588229541AF00FD518F /* String+Error.swift */,
 				7129357522953C4700FD518F /* Main.storyboard */,
 				7129357822953C4900FD518F /* Assets.xcassets */,
 				7129357A22953C4900FD518F /* LaunchScreen.storyboard */,
 				7129357D22953C4900FD518F /* Info.plist */,
 			);
 			path = WebpageScraper;
+			sourceTree = "<group>";
+		};
+		7129358322953D6500FD518F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7129358422953D6500FD518F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7129357422953C4700FD518F /* ViewController.swift in Sources */,
+				71293589229541AF00FD518F /* String+Error.swift in Sources */,
 				7129357222953C4700FD518F /* AppDelegate.swift in Sources */,
+				712935872295400E00FD518F /* Article.swift in Sources */,
+				7129358B2295433300FD518F /* WebpageParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3ER26RU8S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WebpageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K3ER26RU8S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WebpageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
